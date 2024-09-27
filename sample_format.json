@@ -1,0 +1,50 @@
+[
+  {
+    "skipToNextLine": true,
+    "inputType": "single",
+    "dataType": "int",
+    "variableName": "t",
+    "args": {
+      "valueLowerBound": 1,
+      "valueUpperBound": 1000
+    }
+  },
+  {
+    "skipToNextLine": true,
+    "inputType": "single",
+    "dataType": "int",
+    "variableName": "n",
+    "args": {
+      "valueLowerBound": 1,
+      "valueUpperBound": 1000
+    }
+  },
+  {
+    "skipToNextLine": true,
+    "inputType": "array",
+    "dataType": "int",
+    "variableName": "a",
+    "dimensions": ["n", 1],
+    "args": {
+      "valueLowerBound": 1,
+      "valueUpperBound": 1000,
+      "sumElements": 1000,
+      "constraints": ["positive", "sorted_dec", "unique"]
+    }
+  },
+  {
+    "skipToNextLine": false,
+    "inputType": "graph",
+    "variableName": "b",
+    "nodeCount": "n",
+    "edgeCount": 3232,
+    "outputMode": "edge_list",
+    "args": {
+      "weightLowerBound": 1,
+      "weightUpperBound": 1000,
+      "isDirected": false,
+      "isWeighted": true,
+      "constraints": ["multi_edges", "self_loops"]
+    }
+  }
+]
